@@ -1,3 +1,33 @@
 // YOU MUST USE BEM HERE
 // IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE 
 // Example: input, button, card ...
+
+// Colors:
+
+$primary-blue: #0063fb;
+$secondary-blue: #06befb;
+$licorice: #464646;
+$stone: #767676;
+$ice: #F1F9FF;
+
+// Font
+
+@font-face {
+    font-family: "finn-font";
+    src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2);
+}
+
+@font-face {
+    font-family: "finn-font-bold";
+    src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2);
+}
+
+h1 {
+    font-family: "finn-font-bold";
+  }
+
+* {
+    font-family:"finn-font";
+}
+
+

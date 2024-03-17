@@ -1,46 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Screenshot 1 page</title>
+  <link rel="icon" href="assets/icons/favicon--logo.jpg">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="stylesheet" href="assets/styles/common.css">
 </head>
+
 <body>
   <header>
-    <div class="header__logo">
-        <img src="https://kommunikasjon.ntb.no/data/images/00328/38dcdf90-1551-4b0f-9b73-847f8cf00200.png" class="header__img" alt="FINN.no__logo">
-        <p class="header__slogan">Mulighetens marked</p>
-    </div>
-
     <nav class="main-nav">
-        <ul class="main-nav__list">
-            <li class="main-nav__item">
-                <img src="" class="main-nav__icon" alt="notifications">
-                <a href="" class="nav__link">Varslinger</a>
-            </li>
-            <li class="main-nav__item">
-                <img src="" class="main-nav__icon" alt="new-advertisement">
-                <a href="" class="main-nav__link">Ny annonse</a>
-            </li>
-            <li class="main-nav__item">
-                <img src="" class="main-nav__icon" alt="messages">
-                <a href="" class="main-nav__link">Meldinger</a>
-            </li>
-            <li class="main-nav__item">
-                <img src="" class="main-nav__icon" alt="my-account">
-                <a href="" class="main-nav__link">Min Finn</a>
-            </li>
-        </ul>
-    </nav>
-  <hr>
-</header>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="page-screenshot1.html" class="main-nav__logo"><img src="assets/icons/finn-nav__logo.png"></a>
+          <a href="page-screenshot1.html" class="main-nav__slogan">Mulighetens marked</a>
+        </li>
 
-<div class="search__input">
+        <li class="main-nav__item">
+          <img src="assets/icons/bell.svg" class="main-nav__icon" alt="notifications">
+          <a href="page-screenshot2.html" class="main-nav__link">Varslinger</a>
+        </li>
+
+        <li class="main-nav__item">
+          <img src="assets/icons/new-add.svg" class="main-nav__icon" alt="new-advertisement">
+          <a href="page-screenshot2.html" class="main-nav__link">Ny annonse</a>
+        </li>
+
+        <li class="main-nav__item">
+          <img src="assets/icons/meassage.svg" class="main-nav__icon" alt="messages">
+          <a href="page-screenshot2.html" class="main-nav__link">Meldinger</a>
+        </li>
+
+        <li class="main-nav__item">
+          <img src="assets/icons/profile.svg" class="main-nav__icon" alt="my-account">
+          <a href="page-screenshot2.html" class="main-nav__link">Min Finn</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="search__input">
     <input type="text" placeholder="Søk etter ski eller smoking">
-    <img src="" alt="">
-</div>
- <nav>
-    <ul></ul>
- </nav>
+    <img src="assets/icons/search.svg" alt="search">
+    <a href=""></a>
+  </div>
+
+  <nav class="marked-nav">
+    <ul class="marked-nav__list">
+      <li class="marked-nav__item">
+        <img src="assets/icons/torget.svg" class="marked-nav__icon" alt="torget">
+        <a href="" class="marked-nav__link">Torget</a>
+      </li>
+
+      <li class="marked-nav__item">
+        <img src="assets/icons/eiendom.svg" class="marked-nav__icon" alt="eiendom">
+        <a href="" class="marked-nav__link">Eiendom</a>
+      </li>
+
+      <li class="marked-nav__item">
+        <img src="assets/icons/reise.svg" class="marked-nav__icon" alt="reise">
+        <a href="" class="marked-nav__link">Reise</a>
+      </li>
+
+      <li class="marked-nav__item">
+        <img src="assets/icons/båt.svg" class="marked-nav__icon" alt="båt">
+        <a href="" class="marked-nav__link">Båt</a>
+      </li>
+
+      <li class="marked-nav__item">
+        <img src="assets/icons/mc.svg" class="marked-nav__icon" alt="mc">
+        <a href="" class="marked-nav__link">Mc</a>
+      </li>
+
+      <li class="marked-nav__item">
+        <img src="assets/icons/hytte.svg" class="marked-nav__icon" alt="feriehjem-og-hytter-til-leie">
+        <a href="" class="marked-nav__link">Feriehjem og hytter til leie</a>
+      </li>
+
+      <li class="marked-nav__item">
+        <img src="assets/icons/bil.svg" class="marked-nav__icon" alt="bil">
+        <a href="" class="marked-nav__link">Bil</a>
+      </li>
+
+      <li class="marked-nav__item">
+        <img src="assets/icons/jobb.svg" class="marked-nav__icon" alt="jobb">
+        <a href="" class="marked-nav__link">Jobb</a>
+      </li>
+
+      <li class="marked-nav__item">
+        <img src="assets/icons/nybruktmobil.svg" class="marked-nav__icon" alt="nybrukt-mobil">
+        <a href="" class="marked-nav__link">Nybrukt mobil</a>
+      </li>
+
+      <li class="marked-nav__item">
+        <img src="assets/icons/carsoup.svg" class="marked-nav__icon" alt="bilabonnement">
+        <a href="" class="marked-nav__link">Bilabonnement</a>
+      </li>
+
+      <li class="marked-nav__item">
+        <img src="assets/icons/nettbil.svg" class="marked-nav__icon" alt="nettbil">
+        <a href="" class="marked-nav__link">Nettbil</a>
+      </li>
+
+      <li class="marked-nav__item">
+        <img src="assets/icons/mittannbud.svg" class="marked-nav__icon" alt="mitt-anbud">
+        <a href="" class="marked-nav__link">Mittanbud</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="rec">
+    <h1 class="rec__title">Anbefalinger til deg</h1>
+    <a href="" class="rec__subtitle">Hvorfor anbefaler vi disse annonsene?</a>
+    
+    <article class="card">
+      <div>
+        <figure class="card__figure">
+          <img src="assets/icons/favorite-button.svg" class="card__favorite--button" alt="favorite-button">
+          <img src="assets/images/microhouse.jpg" class="card__image" alt="microhouse">
+          <p class="card__price">800 000kr</p>
+        </figure>
+      </div>
+
+      <div clas="card__body">
+        <p class="card__subtitle-loaction">Ålesund</p>
+        <p class="card__title">Hel mikrohuspaviljong m/ 3 mikrohus selges samlet eller hver for seg</p>
+      </div>
+    </article>
+  </section>
 </body>
 </html>
