@@ -22,12 +22,17 @@ $ice: #F1F9FF;
     src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2);
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
     font-family: "finn-font-bold";
   }
 
 * {
     font-family:"finn-font";
 }
+
+// inputs
+
+
+
 
 
