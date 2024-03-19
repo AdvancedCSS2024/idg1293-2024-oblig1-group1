@@ -12,4 +12,35 @@ h1, h2, h3, h4, h5 {
 
 * {
   font-family: "finn-font";
+}
+
+.button_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button--primary {
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: #0063fb;
+  border-width: 0;
+}
+
+.button--secondary {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border-color: #767676;
+  border-width: 2px;
+}
+
+.card_logginn {
+  width: 400px;
+  padding: 32px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+}
+
+a.link {
+  color: #0063fb;
+  text-decoration: none;
 }/*# sourceMappingURL=common.css.map */
