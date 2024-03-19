@@ -4,42 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Screenshot 2 page</title>
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" href="./assets/styles/common.css">
 </head>
 <body>
   <p>Logg inn for å sende meldinger, lagre favoritter og søk. Du får også varsler når det skjer noe nytt!</p>
   <p>Problemer med innloggingen?</p>
-  <a href="">Her kan du finne hjelp</a>
-  <a href="">Tilbake til FINN</a>
+  <a href="#" class="help-link">Her kan du finne hjelp</a>
+  <a href="#" class="back-link">Tilbake til FINN</a>
 
   <article class="card_logginn">
     <div class="card__header">
       <!--logo-->
+
     </div>
 
     <div class="card__body">
       <h2 class="card__title">Logg inn</h2>
-      <form action="">
-        <label for="username">Skriv inn din e-postadresse*</label>
-        <input type="text" id="username">
+      <form action="" class="login-form">
+        <label for="username" ></label>
+        <input type="text" id="username" placeholder="Skriv inn din e-postadresse*">
+        <p>*Nødvendig felt</p>
+        <input type="text" placeholder="Vennligst oppgi passordet ditt*">
+        <p>*Nødvendig felt</p>
       </form>
-      <p>*Nødvendig felt</p>
-      <input type="text">
-      <p>*Nødvendig felt</p>
     </div>
 
-    <a href="">Glemt passord</a>
-    <input type="checkbox">
-    <p>Hold meg innlogget</p>
+    <a href="#" class="">Glemt passord</a>
+
+    <form action="">
+      <input type="checkbox" class="">
+      <p>Hold meg innlogget</p>
+    </form>
+
     <div class="button__container">
-      <button type="submit">Logg på</button>
-      <button>Opprette ny konto</button>
+      <button type="submit" class="button--primary">Logg på</button>
+      <button class="button--secondary">Opprette ny konto</button>
     </div>
 
     <div class="supportlinks">
-      <span>Hjelp</span>
-      <span>Personvernerklæring</span>
-      <span>Vilkår</span>
-      <span>Om Schibsted-konto</span>
+      <span class="supportlink">Hjelp</span>
+      <span class="supportlink">Personvernerklæring</span>
+      <span class="supportlink">Vilkår</span>
+      <span class="supportlink">Om Schibsted-konto</span>
     </div>
   </article>
 </body>
