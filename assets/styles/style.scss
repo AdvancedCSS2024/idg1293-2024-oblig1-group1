@@ -6,3 +6,30 @@
 
 
 //screenshot 2 
+
+.loggin {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+.information {
+   text-align: center;
+}
+
+.card__topbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#finn-image {
+    max-height: 18px;
+}
+
+#schibsted-image {
+    max-height: 24px;
+}
