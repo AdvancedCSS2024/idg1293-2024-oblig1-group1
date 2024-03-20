@@ -4,8 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Demo page</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+
 </head>
 <body>
   <!-- EDIT THIS PAGE TO SHOW HOW YOU USE ALL THE ELEMENTS IMPLEMENTED IN YOUR DESIGN SYSTEM  -->
+
+  <!--search-->
+  <form class="search">
+    <input class="search-input" type="text" placeholder="Søk etter ski eller smoking">
+    <button class="search-btn">
+      <img src="assets/icons/search.svg" class="search-btn__icon" alt="search">
+    </button>
+  </form>
+
+  <!--card-->
+  <article class="card">
+    <div>
+      <figure class="card__figure">
+        <img src="assets/icons/favorite-button.svg" class="card__btn-like" alt="heart-button">
+        <img src="assets/images/microhouse.jpg" class="card__image" alt="microhouse">
+        <p class="card__price">800 000kr</p>
+      </figure>
+    </div>
+
+    <div class="card__body">
+      <p class="card__subtitle-loaction">Ålesund</p>
+      <p class="card__title">Hel mikrohuspaviljong m/ 3 mikrohus selges samlet eller hver for seg</p>
+    </div>
+  </article>
 </body>
 </html>
