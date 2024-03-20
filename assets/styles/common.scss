@@ -2,15 +2,9 @@
 // IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE 
 // Example: input, button, card ...
 
-// Colors:
+// Body
 
-$primary-blue: #0063fb;
-$secondary-blue: #06befb;
-$licorice: #464646;
-$stone: #767676;
-$ice: #F1F9FF;
-
-// Font
+// Fonts
 
 @font-face {
     font-family: "finn-font";
@@ -30,7 +24,258 @@ h1, h2, h3, h4, h5 {
     font-family:"finn-font";
 }
 
-// inputs
+// H1 - h5 variable with their correct size
+$h1-size: 34px;
+$h1-line-height: 41px;
+
+$h2-size: 28px;
+$h2-line-height: 34px;
+
+$h3-size: 22px;
+$h3-line-height: 28px;
+
+$h4-size: 16px;
+$h4-line-height: 22px;
+
+$h5-size: 14px;
+$h5-line-height: 18px;
+
+$text-34-size: 34px;
+$text-34-line-height: 41px;
+
+$text-28-size: 28px;
+$text-28-line-height: 34px;
+
+$text-22-size: 22px;
+$text-22-line-height: 28px;
+
+$text-16-size: 16px;
+$text-16-line-height: 22px;
+
+$text-14-size: 14px;
+$text-14-line-height: 18px;
+
+$text-12-size: 12px;
+$text-12-line-height: 16px;
+
+// Colors:
+
+$primary-blue: #0063fb;
+$secondary-blue: #06befb;
+$licorice: #464646;
+$fontblack: #474445;
+$stone: #767676;
+$ice: #F1F9FF;
+
+
+
+
+// **Navbars**
+
+// Header nav
+header {
+  border-bottom: 1px solid rgba($color: $stone, $alpha: 0.6);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: $text-12-size;
+  line-height: $text-12-line-height;
+
+    &__logo, &__menu {
+      display: flex;
+      align-items: center;
+
+      &-item {
+        display: flex;
+        align-items: center;
+        padding-right: 1rem;
+        text-decoration: none;
+      }
+      
+      &-link {
+        padding-left: 8px;
+        font-family: "finn-font-bold";
+        color: $fontblack;
+        text-decoration: none;
+      }
+    }
+
+    &__logo-img {
+      width: 92px;
+      height: 32px;
+    }
+
+    &__menu {
+      list-style: none;
+    }
+  }
+  
+// Marked nav
+  .marked-nav {
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(6, 160px);
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        list-style: none;
+    }
+
+    &__link, &__icon {
+        display:flex;
+        justify-content: center;
+        color: $fontblack;
+        text-align: center;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 16px 4px;
+        text-decoration: none;
+      }
+
+    &__link {
+        margin-top: 0.8rem;
+    }
+  }
+
+
+
+// **Inputs**
+
+//  Searchbar
+.search {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-grow: 2;
+    
+    &-flex {
+      padding-top: 1.6rem;
+      display: flex;
+      justify-content: center;
+    }
+    
+    &-input {
+        padding: .8rem 4rem .8rem 1rem;
+        width: 100%;
+        border-radius: 4px;
+        border: 2px solid rgba($color: $stone, $alpha: 0.2);
+        display: block;
+      }
+
+    &-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    &-btn, &-btn__map {
+      background-color: transparent;
+      border: none;
+
+      &__map {
+        padding: 1.2rem 1rem;
+        display: flex;
+        align-items: center;
+        font-family: "finn-font-bold";
+        font-size: $text-16-size;
+      }
+      
+      &__icon {
+        padding-right: 8px;
+      }
+    
+    }
+
+
+}
+
+
+//  Login input
+
+
+// Buttons
+
+
+// Cards
+
+    // Marked card
+    .section__marked-cards {
+        padding: 10px;
+        border-radius: 8px;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+      }
+      
+      .card-marked {
+      padding: 10px;
+
+        &__item {
+          display: flex;
+          flex-direction: column;
+          text-decoration: none;
+          color: $fontblack;
+        }
+        
+        &__figure {
+          margin: 0px;
+          position: relative;
+        }
+
+        &__img {
+          border-radius: 8px;
+          border: 1px solid rgba($color: $stone, $alpha: 0.6);
+          width: 300px;
+          height: 300px;
+          object-fit: cover;
+          z-index: 1;
+        }
+        
+        
+        &__title {
+          font-family: "finn-font-bold";
+        }
+
+        &__subtitle--loaction {
+          font-size: $text-12-size;
+        }
+        
+        &__favorite-btn {
+          position: absolute;
+          width: 20px;
+          z-index: 2;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          padding: .8rem 3.5rem .8rem 3.5rem;
+        } 
+
+        &__price {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          color: $ice;
+          font-family: "finn-font-bold";
+          padding: .2rem 12.5rem .4rem 1.5rem;
+          margin-bottom: 5px;
+          border-radius: 8px;
+          background: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 13.71%, rgba(0, 0, 0, 0.114) 25.12%, rgba(0, 0, 0, 0.192) 34.61%, rgba(0, 0, 0, 0.28) 42.59%, rgba(0, 0, 0, 0.37) 49.46%, rgba(0, 0, 0, 0.46) 55.63%, rgba(0, 0, 0, 0.55) 61.47%, rgba(0, 0, 0, 0.627) 67.41%, rgba(0, 0, 0, 0.698) 73.83%, rgba(0, 0, 0, 0.753) 81.13%, rgba(0, 0, 0, 0.79) 89.73%, rgba(0, 0, 0, 0.8));
+        }
+      }
+      
+
+    // Login card 
+
+
+
+
 
 
 
