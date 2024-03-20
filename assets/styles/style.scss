@@ -1,6 +1,6 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
+@use "common";
 
- @use "common";
 //screenshot 1
 body {
   margin: 0px;
@@ -13,8 +13,8 @@ body {
     align-items: baseline;
     margin: 16px;
   }
-
-  &__title {
+  
+   &__title {
     font-family: "finn-font";
     padding-right: 8px;
   }
@@ -29,4 +29,71 @@ body {
 }
 
 
-//screenshot 2
+//screenshot 2 
+.page--information {
+   text-align: center;
+   background-color: common.$ice;
+   padding: 30px;
+}
+
+.card-logginn__topbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--finn-logo {
+        max-height: 18px;
+    }
+
+    &--schibsted-logo {
+        max-height: 24px;
+    } 
+}
+
+.page--logginn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+}
+
+.logginn-with-support {
+    position: relative;
+    display: flex;
+    flex-direction: column
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__innlogget {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+}   
+
+
+.button {
+    display: flex;
+    flex-direction: column;
+}
+
+.support {
+    display: flex;
+    font-size: common.$text-14-size;
+    margin: 20px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+p.requierd {
+    color: common.$stone;
+    margin-top: 0%;
+    font-size: common.$text-12-size;
+}
