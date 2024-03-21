@@ -5,6 +5,7 @@
 //Colors
 $primary-blue: #0063fb;
 $secondary-blue: #06befb;
+$hover-blue:#004ABC;
 $licorice: #464646;
 $fontblack: #474445;
 $stone: #767676;
@@ -61,6 +62,11 @@ h1, h2, h3, h4, h5 {
 
 * {
     font-family:"finn-font";
+}
+
+p {
+  font-family: "finn-font";
+  color: $fontblack;
 }
 
 
@@ -208,25 +214,35 @@ input {
 // Buttons
 .button {
     &--primary {
-        padding: 12px 16px;
-        border-radius: 8px;
-        background-color: $primary-blue;
-        border-width: 0;
-        color:#FFFFFF;
-        font-weight: bold;
-        font-size: 16px;
+      padding: 12px 16px;
+      border-radius: 8px;
+      background-color: $primary-blue;
+      border-width: 0;
+      color:#FFFFFF;
+      font-weight: bold;
+      font-size: 16px;
     }
     &--secondary {
-        padding: 12px 16px;
-        border-radius: 8px;
-        border: none;
-        background-color: transparent;
-        border-width: 2px;
-        color: $primary-blue;
-        font-weight: bold;
-        font-size: 16px;
+      padding: 12px 16px;
+      border-radius: 8px;
+      border: none;
+      background-color: transparent;
+      border-width: 2px;
+      color: $primary-blue;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    &--primary:hover {
+      background-color: $hover-blue;
+    }
+
+    &--secondary:hover {
+      //Box-shadow property form https://www.w3schools.com/css/tryit.asp?filename=trycss3_box-shadow5 
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     }
 }
+
 
 // Cards
 
@@ -296,9 +312,10 @@ input {
       
 
  // Login card 
-.card-logginn {
+.card-login {
     width: 400px;
     padding: 32px;
+    //Box-shadow property form https://www.w3schools.com/css/tryit.asp?filename=trycss3_box-shadow5 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
     border-radius: 8px;
 }

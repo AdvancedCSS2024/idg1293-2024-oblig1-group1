@@ -14,6 +14,11 @@ h1, h2, h3, h4, h5 {
   font-family: "finn-font";
 }
 
+p {
+  font-family: "finn-font";
+  color: #474445;
+}
+
 header {
   border-bottom: 1px solid rgba(118, 118, 118, 0.6);
 }
@@ -143,6 +148,12 @@ input {
   font-weight: bold;
   font-size: 16px;
 }
+.button--primary:hover {
+  background-color: #004ABC;
+}
+.button--secondary:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 .section__marked-cards {
   padding: 10px;
@@ -200,7 +211,7 @@ input {
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 13.71%, rgba(0, 0, 0, 0.114) 25.12%, rgba(0, 0, 0, 0.192) 34.61%, rgba(0, 0, 0, 0.28) 42.59%, rgba(0, 0, 0, 0.37) 49.46%, rgba(0, 0, 0, 0.46) 55.63%, rgba(0, 0, 0, 0.55) 61.47%, rgba(0, 0, 0, 0.627) 67.41%, rgba(0, 0, 0, 0.698) 73.83%, rgba(0, 0, 0, 0.753) 81.13%, rgba(0, 0, 0, 0.79) 89.73%, rgba(0, 0, 0, 0.8));
 }
 
-.card-logginn {
+.card-login {
   width: 400px;
   padding: 32px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -234,26 +245,26 @@ body {
   max-width: 1100px;
 }
 
-.page--information {
+.page__information {
   text-align: center;
   background-color: #F1F9FF;
   padding: 30px;
 }
 
-.card-logginn__topbar {
+.card-login__topbar {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.card-logginn__topbar--finn-logo {
+.card-login__topbar--finn-logo {
   max-height: 18px;
 }
-.card-logginn__topbar--schibsted-logo {
+.card-login__topbar--schibsted-logo {
   max-height: 24px;
 }
 
-.page--logginn {
+.page--login {
   position: relative;
   display: flex;
   align-items: center;
@@ -261,7 +272,7 @@ body {
   padding: 70px;
 }
 
-.logginn-with-support {
+.login-with-support {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -272,7 +283,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.checkbox__innlogget {
+.checkbox__content {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -282,6 +293,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+.button--secondary {
+  margin-top: 10px;
+}
 
 .support {
   display: flex;
@@ -289,9 +303,10 @@ body {
   margin: 20px;
   text-align: center;
   justify-content: space-between;
+  color: #474445;
 }
 
-p.requierd {
+p.login-form__requierd {
   color: #767676;
   margin-top: 0%;
   font-size: 12px;
