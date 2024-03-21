@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "finn-font";
   src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2);
@@ -168,6 +167,3 @@ header {
   border-radius: 8px;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 13.71%, rgba(0, 0, 0, 0.114) 25.12%, rgba(0, 0, 0, 0.192) 34.61%, rgba(0, 0, 0, 0.28) 42.59%, rgba(0, 0, 0, 0.37) 49.46%, rgba(0, 0, 0, 0.46) 55.63%, rgba(0, 0, 0, 0.55) 61.47%, rgba(0, 0, 0, 0.627) 67.41%, rgba(0, 0, 0, 0.698) 73.83%, rgba(0, 0, 0, 0.753) 81.13%, rgba(0, 0, 0, 0.79) 89.73%, rgba(0, 0, 0, 0.8));
 }/*# sourceMappingURL=common.css.map */
-
-/*# sourceMappingURL=common.css.map */
-
