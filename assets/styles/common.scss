@@ -84,82 +84,107 @@ header {
   font-size: $text-12-size;
   line-height: $text-12-line-height;
 
-  &__logo,
-  &__menu {
+  &-logo__link:hover {
+    border-bottom: 2px solid rgba($color: $primary-blue, $alpha: 0.8);
+  }
+
+  &-logo__link {
+    padding: 10px;
+  }
+  
+  &-logo,
+  &-menu {
     display: flex;
     align-items: center;
-
-    &-item {
+    list-style: none;
+    
+    &__item,
+    &__list,
+    &__link {
       display: flex;
       align-items: center;
-      padding-right: 1rem;
       text-decoration: none;
-    }
-
-    &-link {
-      padding-left: 8px;
-      font-family: "finn-font-bold";
       color: $fontblack;
-      text-decoration: none;
+    }
+    
+    &__list {
+      margin: 0px;
+    }
+    
+    &__text, &__link {
+      margin-left: 8px;
+      font-family: "finn-font-bold";
+    }
+    
+    &__img {
+      width: 92px;
+      height: 32px;
+    }
+
+    &__item {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin-left: 1rem;
+      padding: 10px;
+    }
+
+    &__item:hover {
+      border-bottom: 2px solid rgba($color: $primary-blue, $alpha: 0.8);
     }
   }
 
-  &__logo-img {
-    width: 92px;
-    height: 32px;
-  }
 
-  &__menu {
-    list-style: none;
-  }
+
 }
 
 // Marked navigation
-.marked-nav {
+.nav-marked {
   &__list {
     display: grid;
     grid-template-columns: repeat(6, 160px);
-    justify-content: center;
-    align-items: center;
     padding: 0px;
     list-style: none;
+    justify-content: center;
   }
 
-  &__link,
-  &__icon {
+  &__item
+  &__link {
+    align-items: center;
     display: flex;
     justify-content: center;
+  }
+
+  &__link {
+    flex-direction: column;
+    padding: 16px 4px;
+    text-decoration: none;
+    margin-top: 0.8rem;
     color: $fontblack;
     text-align: center;
   }
 
-  &__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px 4px;
-    text-decoration: none;
-  }
-
-  &__link {
-    margin-top: 0.8rem;
+  &__icon {
+    width: 36px;
+    height: 24px;
+    margin-bottom: 0.8rem;
   }
 }
 
-// **Inputs**
+
+// **Inputs** 
 
 //  Searchbar
+.search-container {
+  padding-top: 1.6rem;
+  display: flex;
+  justify-content: center;
+}
+
 .search {
   display: flex;
   justify-content: center;
   position: relative;
   flex-grow: 2;
-
-  &-flex {
-    padding-top: 1.6rem;
-    display: flex;
-    justify-content: center;
-  }
 
   &-input {
     padding: 0.8rem 4rem 0.8rem 1rem;
@@ -233,34 +258,35 @@ header {
     z-index: 1;
   }
 
-  &__title {
+  &__title, &__price {
     font-family: "finn-font-bold";
   }
 
-  &__subtitle--loaction {
+  &__subtitle--location {
     font-size: $text-12-size;
   }
 
-  &__favorite-btn {
-    position: absolute;
+  &__btn {
     width: 20px;
     z-index: 2;
     top: 0;
-    bottom: 0;
     right: 0;
     padding: 0.8rem 3.5rem 0.8rem 3.5rem;
   }
+  
+  &__btn, &__price {
+    bottom: 0;
+    position: absolute;
+  }
 
   &__price {
-    position: absolute;
-    bottom: 0;
     left: 0;
     color: $ice;
-    font-family: "finn-font-bold";
     padding: 0.2rem 12.5rem 0.4rem 1.5rem;
     margin-bottom: 5px;
     border-radius: 8px;
-    background: linear-gradient(
+    // Gradient property from https://www.finn.no/
+    background: linear-gradient( 
       transparent,
       rgba(0, 0, 0, 0.05) 13.71%,
       rgba(0, 0, 0, 0.114) 25.12%,
