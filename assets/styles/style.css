@@ -6,11 +6,7 @@
   font-family: "finn-font-bold";
   src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2);
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
   font-family: "finn-font-bold";
 }
 
@@ -110,6 +106,7 @@ header {
   flex-grow: 2;
 }
 .search-input {
+  background-color: transparent;
   padding: 0.8rem 4rem 0.8rem 1rem;
   width: 100%;
   border-radius: 4px;
@@ -137,7 +134,10 @@ header {
   padding-right: 8px;
 }
 
-input {
+.login-form {
+  position: relative;
+}
+.login-form__input {
   width: 93%;
   padding: 20px;
   margin: 8px 0;
@@ -145,8 +145,14 @@ input {
   border-left: 0px;
   border-right: 0px;
   border-top: 0px;
-  background-color: #F6F8FB;
   font-weight: bold;
+  background-color: #F6F8FB;
+}
+.login-form__icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 48px;
 }
 
 .button--primary {
@@ -180,6 +186,7 @@ input {
   border-radius: 8px;
   display: grid;
   grid-template-columns: repeat(3, auto);
+  justify-content: center;
 }
 
 .card-marked {
@@ -190,6 +197,7 @@ input {
   flex-direction: column;
   text-decoration: none;
   color: #474445;
+  max-width: 302px;
 }
 .card-marked__figure {
   margin: 0px;
@@ -223,7 +231,7 @@ input {
 }
 .card-marked__price {
   left: 0;
-  color: #f1f9ff;
+  color: #F1F9FF;
   padding: 0.2rem 12.5rem 0.4rem 1.5rem;
   margin-bottom: 5px;
   border-radius: 8px;
@@ -242,16 +250,33 @@ a {
   text-decoration: none;
 }
 
+.title {
+  padding: 1rem;
+}
+
+.demo__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 100px;
+  padding: 20px;
+}
+.demo__article {
+  padding-left: 20px;
+}
+
 body {
   margin: 0px;
 }
 
-.foryou__header {
+.foryou-section__header {
   display: flex;
   align-items: baseline;
   margin: 16px;
 }
-.foryou__title {
+.foryou-section__title {
   font-family: "finn-font";
   padding-right: 8px;
 }
@@ -263,7 +288,6 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   max-width: 1100px;
-
 }
 
 .page__information {
@@ -331,5 +355,4 @@ p.login-form__requierd {
   color: #767676;
   margin-top: 0%;
   font-size: 12px;
-
 }/*# sourceMappingURL=style.css.map */

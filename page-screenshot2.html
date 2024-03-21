@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Screenshot 2 page</title>
+  <link rel="icon" href="https://www.finn.no/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 
@@ -31,10 +32,10 @@
           <h2 class="card-login__title">Logg inn</h2>
           <form class="login-form">
             <label for="username" class="login-form__label"></label>
-            <input type="text" id="username" placeholder="Skriv inn din e-postadresse*">
+            <input class="login-form__input" type="text" id="username" placeholder="Skriv inn din e-postadresse*">
             <p class="login-form__requierd">*Nødvendig felt</p>
-            <input type="text" id="passord" placeholder="Vennligst oppgi passordet ditt*">
-            <img src="assets/icons/hide-icon.svg" alt="">
+            <input class="login-form__input" type="text" placeholder="Vennligst oppgi passordet ditt*">
+            <img class="login-form__icon" src="assets/icons/hide-icon.svg" alt="">
             <p class="login-form__requierd">*Nødvendig felt</p>
           </form>
         </div>
@@ -51,7 +52,6 @@
           <img src="assets/icons/info-icon.svg" alt="">
         </div>
 
-  
         <div class="button">
           <button type="submit" class="button--primary">Logg på</button>
           <button class="button--secondary">Opprette ny konto</button>

@@ -1,13 +1,34 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
 @use "common";
 
+// **Demo page**
+.title {
+    padding: 1rem;
+}
+
+.demo {
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+        margin: 100px;
+        padding: 20px;
+    }
+        &__article {
+            padding-left: 20px;
+        }
+}
+
 // **Screenshot 1 CSS**
 
 body {
     margin: 0px;
 }
 
-.foryou {
+.foryou-section {
+    
     &__header {
         display: flex;
         align-items: baseline;
