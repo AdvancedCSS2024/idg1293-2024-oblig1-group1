@@ -1,1 +1,32 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
+
+@use "common";
+
+// **Screenshot 1 CSS**
+body {
+    margin: 0px;
+}
+
+.foryou {
+    &__header {
+        display: flex;
+        align-items: baseline;
+        margin: 16px;
+    }
+
+    &__title {
+        font-family: "finn-font";
+        padding-right: 8px;
+    }
+}
+
+.page-container,
+.nav {
+    margin-left: 14rem;
+    margin-right: 14rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1100px;
+}
+
+// **Screenshot 2 CSS**
