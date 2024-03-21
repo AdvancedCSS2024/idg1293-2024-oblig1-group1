@@ -2,11 +2,17 @@
   font-family: "finn-font";
   src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2);
 }
+
 @font-face {
   font-family: "finn-font-bold";
   src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2);
 }
-h1, h2, h3, h4, h5 {
+
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "finn-font-bold";
 }
 
@@ -24,26 +30,34 @@ header {
   font-size: 12px;
   line-height: 16px;
 }
-.nav__logo, .nav__menu {
+
+.nav__logo,
+.nav__menu {
   display: flex;
   align-items: center;
 }
-.nav__logo-item, .nav__menu-item {
+
+.nav__logo-item,
+.nav__menu-item {
   display: flex;
   align-items: center;
   padding-right: 1rem;
   text-decoration: none;
 }
-.nav__logo-link, .nav__menu-link {
+
+.nav__logo-link,
+.nav__menu-link {
   padding-left: 8px;
   font-family: "finn-font-bold";
   color: #474445;
   text-decoration: none;
 }
+
 .nav__logo-img {
   width: 92px;
   height: 32px;
 }
+
 .nav__menu {
   list-style: none;
 }
@@ -56,12 +70,15 @@ header {
   padding: 0px;
   list-style: none;
 }
-.marked-nav__link, .marked-nav__icon {
+
+.marked-nav__link,
+.marked-nav__icon {
   display: flex;
   justify-content: center;
   color: #474445;
   text-align: center;
 }
+
 .marked-nav__item {
   display: flex;
   flex-direction: column;
@@ -69,6 +86,7 @@ header {
   padding: 16px 4px;
   text-decoration: none;
 }
+
 .marked-nav__link {
   margin-top: 0.8rem;
 }
@@ -79,11 +97,13 @@ header {
   position: relative;
   flex-grow: 2;
 }
+
 .search-flex {
   padding-top: 1.6rem;
   display: flex;
   justify-content: center;
 }
+
 .search-input {
   padding: 0.8rem 4rem 0.8rem 1rem;
   width: 100%;
@@ -91,24 +111,31 @@ header {
   border: 2px solid rgba(118, 118, 118, 0.2);
   display: block;
 }
+
 .search-btn {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
 }
-.search-btn, .search-btn__map {
+
+.search-btn,
+.search-btn__map {
   background-color: transparent;
   border: none;
 }
-.search-btn__map, .search-btn__map__map {
+
+.search-btn__map,
+.search-btn__map__map {
   padding: 1.2rem 1rem;
   display: flex;
   align-items: center;
   font-family: "finn-font-bold";
   font-size: 16px;
 }
-.search-btn__icon, .search-btn__map__icon {
+
+.search-btn__icon,
+.search-btn__map__icon {
   padding-right: 8px;
 }
 
@@ -122,31 +149,37 @@ header {
 .card-marked {
   padding: 10px;
 }
+
 .card-marked__item {
   display: flex;
   flex-direction: column;
   text-decoration: none;
   color: #474445;
 }
+
 .card-marked__figure {
   margin: 0px;
   position: relative;
 }
+
 .card-marked__img {
   border-radius: 8px;
   border: 1px solid rgba(118, 118, 118, 0.6);
   width: 300px;
   height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: 1;
 }
+
 .card-marked__title {
   font-family: "finn-font-bold";
 }
+
 .card-marked__subtitle--loaction {
   font-size: 12px;
 }
+
 .card-marked__favorite-btn {
   position: absolute;
   width: 20px;
@@ -156,6 +189,7 @@ header {
   right: 0;
   padding: 0.8rem 3.5rem 0.8rem 3.5rem;
 }
+
 .card-marked__price {
   position: absolute;
   bottom: 0;
@@ -177,15 +211,19 @@ body {
   align-items: baseline;
   margin: 16px;
 }
+
 .foryou__title {
   font-family: "finn-font";
   padding-right: 8px;
 }
 
-.page-container, .nav {
+.page-container,
+.nav {
   margin-left: auto;
   margin-right: auto;
   padding-left: 30px;
   padding-right: 30px;
   max-width: 1100px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
