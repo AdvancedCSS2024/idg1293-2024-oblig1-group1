@@ -3,6 +3,15 @@
 // Example: input, button, card ...
 
 // **Variables**
+//Colors
+$primary-blue: #0063fb;
+$secondary-blue: #06befb;
+$hover-blue:#004ABC;
+$licorice: #464646;
+$fontblack: #474445;
+$stone: #767676;
+$ice: #F1F9FF;
+$marble: #F6F8FB;
 
 // H1 - h5 variable with their correct size imported form the fabric site
 $h1-size: 34px;
@@ -38,38 +47,29 @@ $text-14-line-height: 18px;
 $text-12-size: 12px;
 $text-12-line-height: 16px;
 
-// Color variables
+// Fonts
+@font-face {
+    font-family: "finn-font";
+    src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2);
+}
 
-$primary-blue: #0063fb;
-$secondary-blue: #06befb;
-$licorice: #464646;
-$fontblack: #474445;
-$stone: #767676;
-$ice: #f1f9ff;
-
-// **Fonts**
 
 @font-face {
-  font-family: "finn-font";
-  src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2);
+    font-family: "finn-font-bold";
+    src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2);
 }
 
-@font-face {
-  font-family: "finn-font-bold";
-  src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "finn-font-bold";
-}
+h1, h2, h3, h4, h5 {
+    font-family: "finn-font-bold";
+  }
 
 * {
-  font-family: "finn-font";
+    font-family:"finn-font";
 }
+
+p {
+  font-family: "finn-font";
+  color: $fontblack;
 
 // **Navbars**
 
@@ -132,11 +132,9 @@ header {
       border-bottom: 2px solid rgba($color: $primary-blue, $alpha: 0.8);
     }
   }
-
-
-
 }
 
+  
 // Marked navigation
 .nav-marked {
   &__list {
@@ -169,7 +167,6 @@ header {
     margin-bottom: 0.8rem;
   }
 }
-
 
 // **Inputs** 
 
@@ -221,12 +218,56 @@ header {
 }
 
 //  Login input
+input {
+    width: 93%;
+    padding: 20px;
+    margin: 8px 0;
+    border-radius: 4px 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    background-color: $marble;
+    font-weight: bold;
+}
 
+  
 // Buttons
+.button {
+    &--primary {
+      padding: 12px 16px;
+      border-radius: 8px;
+      background-color: $primary-blue;
+      border-width: 0;
+      color:#FFFFFF;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    &--secondary {
+      padding: 12px 16px;
+      border-radius: 8px;
+      border: none;
+      background-color: transparent;
+      border-width: 2px;
+      color: $primary-blue;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    &--primary:hover {
+      background-color: $hover-blue;
+    }
+
+    &--secondary:hover {
+      //Box-shadow property form https://www.w3schools.com/css/tryit.asp?filename=trycss3_box-shadow5 
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    }
+}
 
 // **Cards**
 
-// Marked card
+// Cards
+
+    // Marked card
 .section__marked-cards {
   padding: 10px;
   border-radius: 8px;
@@ -243,6 +284,7 @@ header {
     text-decoration: none;
     color: $fontblack;
   }
+
 
   &__figure {
     margin: 0px;
@@ -303,5 +345,20 @@ header {
     );
   }
 }
+      
 
-// Login card
+ // Login card 
+  
+.card-login {
+    width: 400px;
+    padding: 32px;
+    //Box-shadow property form https://www.w3schools.com/css/tryit.asp?filename=trycss3_box-shadow5 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    border-radius: 8px;
+}
+
+//link
+a {
+    color: $primary-blue;
+    text-decoration: none;
+}
