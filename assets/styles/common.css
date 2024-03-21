@@ -6,7 +6,11 @@
   font-family: "finn-font-bold";
   src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2);
 }
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "finn-font-bold";
 }
 
@@ -29,53 +33,74 @@ header {
   font-size: 12px;
   line-height: 16px;
 }
-.nav__logo, .nav__menu {
-  display: flex;
-  align-items: center;
+.nav-logo__link:hover {
+  border-bottom: 2px solid rgba(0, 99, 251, 0.8);
 }
-.nav__logo-item, .nav__menu-item {
+.nav-logo__link {
+  padding: 10px;
+}
+.nav-logo, .nav-menu {
   display: flex;
   align-items: center;
-  padding-right: 1rem;
+  list-style: none;
+}
+.nav-logo__item, .nav-logo__list, .nav-logo__link, .nav-menu__item, .nav-menu__list, .nav-menu__link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
-}
-.nav__logo-link, .nav__menu-link {
-  padding-left: 8px;
-  font-family: "finn-font-bold";
   color: #474445;
-  text-decoration: none;
 }
-.nav__logo-img {
+.nav-logo__list, .nav-menu__list {
+  margin: 0px;
+}
+.nav-logo__text, .nav-logo__link, .nav-menu__text, .nav-menu__link {
+  margin-left: 8px;
+  font-family: "finn-font-bold";
+}
+.nav-logo__img, .nav-menu__img {
   width: 92px;
   height: 32px;
 }
-.nav__menu {
-  list-style: none;
+.nav-logo__item, .nav-menu__item {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 1rem;
+  padding: 10px;
+}
+.nav-logo__item:hover, .nav-menu__item:hover {
+  border-bottom: 2px solid rgba(0, 99, 251, 0.8);
 }
 
-.marked-nav__list {
+.nav-marked__list {
   display: grid;
   grid-template-columns: repeat(6, 160px);
-  justify-content: center;
-  align-items: center;
   padding: 0px;
   list-style: none;
+  justify-content: center;
 }
-.marked-nav__link, .marked-nav__icon {
+.nav-marked__item .nav-marked__link {
+  align-items: center;
   display: flex;
   justify-content: center;
+}
+.nav-marked__link {
+  flex-direction: column;
+  padding: 16px 4px;
+  text-decoration: none;
+  margin-top: 0.8rem;
   color: #474445;
   text-align: center;
 }
-.marked-nav__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px 4px;
-  text-decoration: none;
+.nav-marked__icon {
+  width: 36px;
+  height: 24px;
+  margin-bottom: 0.8rem;
 }
-.marked-nav__link {
-  margin-top: 0.8rem;
+
+.search-container {
+  padding-top: 1.6rem;
+  display: flex;
+  justify-content: center;
 }
 
 .search {
@@ -83,11 +108,6 @@ header {
   justify-content: center;
   position: relative;
   flex-grow: 2;
-}
-.search-flex {
-  padding-top: 1.6rem;
-  display: flex;
-  justify-content: center;
 }
 .search-input {
   padding: 0.8rem 4rem 0.8rem 1rem;
@@ -184,31 +204,31 @@ input {
      object-fit: cover;
   z-index: 1;
 }
-.card-marked__title {
+.card-marked__title, .card-marked__price {
   font-family: "finn-font-bold";
 }
-.card-marked__subtitle--loaction {
+.card-marked__subtitle--location {
   font-size: 12px;
 }
-.card-marked__favorite-btn {
-  position: absolute;
+.card-marked__btn {
   width: 20px;
   z-index: 2;
   top: 0;
-  bottom: 0;
   right: 0;
   padding: 0.8rem 3.5rem 0.8rem 3.5rem;
 }
-.card-marked__price {
-  position: absolute;
+.card-marked__btn, .card-marked__price {
   bottom: 0;
+  position: absolute;
+}
+.card-marked__price {
   left: 0;
-  color: #F1F9FF;
-  font-family: "finn-font-bold";
+  color: #f1f9ff;
   padding: 0.2rem 12.5rem 0.4rem 1.5rem;
   margin-bottom: 5px;
   border-radius: 8px;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 13.71%, rgba(0, 0, 0, 0.114) 25.12%, rgba(0, 0, 0, 0.192) 34.61%, rgba(0, 0, 0, 0.28) 42.59%, rgba(0, 0, 0, 0.37) 49.46%, rgba(0, 0, 0, 0.46) 55.63%, rgba(0, 0, 0, 0.55) 61.47%, rgba(0, 0, 0, 0.627) 67.41%, rgba(0, 0, 0, 0.698) 73.83%, rgba(0, 0, 0, 0.753) 81.13%, rgba(0, 0, 0, 0.79) 89.73%, rgba(0, 0, 0, 0.8));
+
 }
 
 .card-login {
@@ -221,4 +241,5 @@ input {
 a {
   color: #0063fb;
   text-decoration: none;
+
 }/*# sourceMappingURL=common.css.map */

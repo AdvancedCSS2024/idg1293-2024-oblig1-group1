@@ -12,202 +12,203 @@
 <body>
   <header>
     <nav class="nav">
-      <div class="nav__logo">
-        <a href="page-screenshot1.html" class="nav__logo-item">
-          <img src="assets/icons/finn-nav__logo.png" class="nav__logo-img" alt="finn.no logo">
-          <span class="nav__logo-link">Mulighetens marked</span>
+      <div class="nav-logo">
+        <a href="page-screenshot1.html" class="nav-logo__link">
+          <img src="assets/icons/finn-nav__logo.png" class="nav-logo__img" alt="finn.no logo">
+          <span class="nav-logo__text">Mulighetens marked</span>
         </a>
       </div>
 
-      <ul class="nav__menu">
-        <li class="nav__menu-list">
-          <a href="" class="nav__menu-item">
-            <img src="assets/icons/bell.svg" class="nav__menu-icon" alt="notifications">
-            <span class="nav__menu-link">Varslinger</span>
-          </a>
-        </li>
+      <div class="nav-menu">
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item">
+            <a href="" class="nav-menu__link">
+              <img src="assets/icons/bell.svg" class="nav-menu__icon" alt="notifications">
+              <span class="nav-menu__text">Varslinger</span>
+            </a>
+          </li>
 
-        <li class="nav__menu-list">
-          <a href="" class="nav__menu-item">
-            <img src="assets/icons/new-add.svg" class="nav__menu-icon" alt="new-advertisement">
-            <span href="page-screenshot2.html" class="nav__menu-link">Ny annonse</span>
-          </a>
-        </li>
+          <li class="nav-menu__item">
+            <a href="" class="nav-menu__link">
+              <img src="assets/icons/new-add.svg" class="nav-menu__icon" alt="new-advertisement">
+              <span class="nav-menu__text">Ny annonse</span>
+            </a>
+          </li>
 
-        <li class="nav__menu-list">
-          <a href="" class="nav__menu-item">
-            <img src="assets/icons/meassage.svg" class="nav__menu-icon" alt="messages">
-            <span href="page-screenshot2.html" class="nav__menu-link">Meldinger</span>
-          </a>
-        </li>
+          <li class="nav-menu__item">
+            <a href="page-screenshot2.html" class="nav-menu__link">
+              <img src="assets/icons/meassage.svg" class="nav-menu__icon" alt="messages">
+              <span class="nav-menu__text">Meldinger</span>
+            </a>
+          </li>
 
-        <li class="nav__menu-list">
-          <a href="" class="nav__menu-item">
-            <img src="assets/icons/profile.svg" class="nav__menu-icon" alt="my-account">
-            <span href="page-screenshot2.html" class="nav__menu-link">Min Finn</span>
-          </a>
-        </li>
-      </ul>
+          <li class="nav-menu__item">
+            <a href="page-screenshot2.html" class="nav-menu__link">
+              <img src="assets/icons/profile.svg" class="nav-menu__icon" alt="my-account">
+              <span class="nav-menu__text">Min Finn</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
   <main class="page-container">
-    <div class="search-flex">
+    <div class="search-container">
       <div class="search">
         <input class="search-input" type="text" placeholder="Søk etter ski eller smoking">
         <button class="search-btn">
           <img src="assets/icons/search.svg" class="search-btn__icon" alt="search">
         </button>
-      </imput>
+      </div>
+
+      <div class="search__map">
+        <button class="search-btn__map">
+          <img src="assets/icons/map.svg" class="search-btn__icon" alt="">Kart
+        </button>
+      </div>
     </div>
-    <div class="search__map">
-      <button class="search-btn__map">
-        <img src="assets/icons/map.svg" class="search-btn__icon" alt="">Kart
-      </button>
-    </div>
-  </div>
 
-    <nav class="marked-nav">
-      <ul class="marked-nav__list">
-        <li>
-          <a href="page-screenshot2.html" class="marked-nav__item">
-            <img src="assets/icons/torget.svg" class="marked-nav__icon" alt="torget">
-            <span class="marked-nav__link">Torget</span>
+    <nav class="nav-marked">
+      <ul class="nav-marked__list">
+        <li class="nav-marked__item">
+          <a href="page-screenshot2.html" class="nav-marked__link">
+            <img src="assets/icons/torget.svg" class="nav-marked__icon" alt="torget">
+            <span class="nav-marked__text">Torget</span>
           </a>
         </li>
 
-        <li>
-          <a href="page-screenshot2.html" class="marked-nav__item">
-            <img src="assets/icons/eiendom.svg" class="marked-nav__icon" alt="eiendom">
-            <span class="marked-nav__link">Eiendom</span>
+        <li class="nav-marked__item">
+          <a href="page-screenshot2.html" class="nav-marked__link">
+            <img src="assets/icons/eiendom.svg" class="nav-marked__icon" alt="eiendom">
+            <span class="nav-marked__text">Eiendom</span>
           </a>
         </li>
 
-        <li>
-          <a href="page-screenshot2.html" class="marked-nav__item">
-            <img src="assets/icons/reise.svg" class="marked-nav__icon" alt="reise">
-            <span class="marked-nav__link">Reise</span>
+        <li class="nav-marked__item">
+          <a href="page-screenshot2.html" class="nav-marked__link">
+            <img src="assets/icons/reise.svg" class="nav-marked__icon" alt="reise">
+            <span class="nav-marked__text">Reise</span>
           </a>
         </li>
 
-        <li>
-          <a href="page-screenshot2.html" class="marked-nav__item">
-            <img src="assets/icons/båt.svg" class="marked-nav__icon" alt="båt">
-            <span class="marked-nav__link">Båt</span>
+        <li class="nav-marked__item">
+          <a href="page-screenshot2.html" class="nav-marked__link">
+            <img src="assets/icons/båt.svg" class="nav-marked__icon" alt="båt">
+            <span class="nav-marked__text">Båt</span>
           </a>
         </li>
 
-        <li>
-          <a href="page-screenshot2.html" class="marked-nav__item">
-            <img src="assets/icons/mc.svg" class="marked-nav__icon" alt="mc">
-            <span class="marked-nav__link">Mc</span>
+        <li class="nav-marked__item">
+          <a href="page-screenshot2.html" class="nav-marked__link">
+            <img src="assets/icons/mc.svg" class="nav-marked__icon" alt="mc">
+            <span class="nav-marked__text">Mc</span>
           </a>
         </li>
 
-        <li>
-          <a href="page-screenshot2.html" class="marked-nav__item">
-            <img src="assets/icons/hytte.svg" class="marked-nav__icon" alt="feriehjem-og-hytter-til-leie">
-            <span class="marked-nav__link">Feriehjem og hytter til leie</span>
+        <li class="nav-marked__item">
+          <a href="page-screenshot2.html" class="nav-marked__link">
+            <img src="assets/icons/hytte.svg" class="nav-marked__icon" alt="feriehjem-og-hytter-til-leie">
+            <span class="nav-marked__text">Feriehjem og hytter til leie</span>
           </a>
         </li>
 
-        <li>
-          <a href="page-screenshot2.html" class="marked-nav__item">
-            <img src="assets/icons/bil.svg" class="marked-nav__icon" alt="bil">
-            <span class="marked-nav__link">Bil</span>
+        <li class="nav-marked__item">
+          <a href="page-screenshot2.html" class="nav-marked__link">
+            <img src="assets/icons/bil.svg" class="nav-marked__icon" alt="bil">
+            <span class="nav-marked__text">Bil</span>
           </a>
 
-        <li>
-          <a href="page-screenshot2.html" class="marked-nav__item">
-            <img src="assets/icons/jobb.svg" class="marked-nav__icon" alt="jobb">
-            <span class="marked-nav__link">Jobb</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="page-screenshot2.html" class="marked-nav__item">
-            <img src="assets/icons/nybruktmobil.svg" class="marked-nav__icon" alt="nybrukt-mobil">
-            <span class="marked-nav__link">Nybrukt mobil</span>
+        <li class="nav-marked__item">
+          <a href="page-screenshot2.html" class="nav-marked__link">
+            <img src="assets/icons/jobb.svg" class="nav-marked__icon" alt="jobb">
+            <span class="nav-marked__text">Jobb</span>
           </a>
         </li>
 
-        <li>
-          <a href="page-screenshot2.html" class="marked-nav__item">
-            <img src="assets/icons/carsoup.svg" class="marked-nav__icon" alt="bilabonnement">
-            <span class="marked-nav__link">Bilabonnement</span>
+        <li class="nav-marked__item">
+          <a href="page-screenshot2.html" class="nav-marked__link">
+            <img src="assets/icons/nybruktmobil.svg" class="nav-marked__icon" alt="nybrukt-mobil">
+            <span class="nav-marked__text">Nybrukt mobil</span>
           </a>
         </li>
 
-        <li>
-          <a href="page-screenshot2.html" class="marked-nav__item">
-            <img src="assets/icons/nettbil.svg" class="marked-nav__icon" alt="nettbil">
-            <span class="marked-nav__link">Nettbil</span>
+        <li class="nav-marked__item">
+          <a href="page-screenshot2.html" class="nav-marked__link">
+            <img src="assets/icons/carsoup.svg" class="nav-marked__icon" alt="bilabonnement">
+            <span class="nav-marked__text">Bilabonnement</span>
           </a>
         </li>
 
-        <li>
-          <a href="page-screenshot2.html" class="marked-nav__item">
-            <img src="assets/icons/mittannbud.svg" class="marked-nav__icon" alt="mitt-anbud">
-            <span class="marked-nav__link">Mittanbudspan</span>
+        <li class="nav-marked__item">
+          <a href="page-screenshot2.html" class="nav-marked__link">
+            <img src="assets/icons/nettbil.svg" class="nav-marked__icon" alt="nettbil">
+            <span class="nav-marked__text">Nettbil</span>
+          </a>
+        </li>
+
+        <li class="nav-marked__item">
+          <a href="page-screenshot2.html" class="nav-marked__link">
+            <img src="assets/icons/mittannbud.svg" class="nav-marked__icon" alt="mitt-anbud">
+            <span class="nav-marked__text">Mittanbudspan</span>
           </a>
         </li>
       </ul>
     </nav>
 
-  <section class="foryou">
-    <div class="foryou__header">
-      <h1 class="foryou__title">Anbefalinger til deg</h1>
-      <a href="" class="foryou__subtitle">Hvorfor anbefaler vi disse annonsene?</a>
-    </div>
+    <section class="section--foryou">
+      <div class="foryou__header">
+        <h1 class="foryou__title">Anbefalinger til deg</h1>
+        <a href="" class="foryou__subtitle">Hvorfor anbefaler vi disse annonsene?</a>
+      </div>
 
-    <!--BEM?-->
-    <section class="section__marked-cards">
+      <section class="section__marked-cards">
 
-      <article class="card-marked">
-        <a href="" class="card-marked__item">
-          <figure class="card-marked__figure">
-            <img src="assets/icons/favorite-button.svg" class="card-marked__favorite-btn" alt="heart-button">
-            <img src="assets/images/microhouse.jpg" class="card-marked__img" alt="microhouse">
-            <p class="card-marked__price">800 000kr</p>
-          </figure>
-
-          <div class="card-marked__body">
-            <p class="card-marked__subtitle--loaction">Ålesund</p>
-            <p class="card-marked__title">Hel mikrohuspaviljong m/ 3 mikrohus selges samlet eller hver for seg</p>
-          </div>
-        </a>
-      </article>
-
-      <article class="card-marked">
-        <a href="" class="card-marked__item">
+        <article class="card-marked">
+          <a href="" class="card-marked__item">
             <figure class="card-marked__figure">
-              <img src="assets/icons/favorite-button.svg" class="card-marked__favorite-btn" alt="heart-button">
+              <img src="assets/icons/favorite-button.svg" class="card-marked__btn" alt="heart-button">
               <img src="assets/images/microhouse.jpg" class="card-marked__img" alt="microhouse">
               <p class="card-marked__price">800 000kr</p>
             </figure>
 
             <div class="card-marked__body">
-              <p class="card-marked__subtitle-loaction">Ålesund</p>
+              <p class="card-marked__subtitle--location">Ålesund</p>
               <p class="card-marked__title">Hel mikrohuspaviljong m/ 3 mikrohus selges samlet eller hver for seg</p>
             </div>
-        </a>
-      </article>
+          </a>
+        </article>
 
-      <article class="card-marked">
-        <a href="" class="card-marked__item">
-          <figure class="card-marked__figure">
-            <img src="assets/icons/favorite-button.svg" class="card-marked__favorite-btn" alt="heart-button">
-            <img src="assets/images/microhouse.jpg" class="card-marked__img" alt="microhouse">
-            <p class="card-marked__price">800 000kr</p>
-          </figure>
+        <article class="card-marked">
+          <a href="" class="card-marked__item">
+            <figure class="card-marked__figure">
+              <img src="assets/icons/favorite-button.svg" class="card-marked__btn" alt="heart-button">
+              <img src="assets/images/microhouse.jpg" class="card-marked__img" alt="microhouse">
+              <p class="card-marked__price">800 000kr</p>
+            </figure>
 
-          <div class="card-marked__body">
-            <p class="card-marked__subtitle--loaction">Ålesund</p>
-            <p class="card-marked__title">Hel mikrohuspaviljong m/ 3 mikrohus selges samlet eller hver for seg</p>
-          </div>
-        </a>
-      </article>
-    </section>
+            <div class="card-marked__body">
+              <p class="card-marked__subtitle--location">Ålesund</p>
+              <p class="card-marked__title">Hel mikrohuspaviljong m/ 3 mikrohus selges samlet eller hver for seg</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card-marked">
+          <a href="" class="card-marked__item">
+            <figure class="card-marked__figure">
+              <img src="assets/icons/favorite-button.svg" class="card-marked__btn" alt="heart-button">
+              <img src="assets/images/microhouse.jpg" class="card-marked__img" alt="microhouse">
+              <p class="card-marked__price">800 000kr</p>
+            </figure>
+
+            <div class="card-marked__body">
+              <p class="card-marked__subtitle--location">Ålesund</p>
+              <p class="card-marked__title">Hel mikrohuspaviljong m/ 3 mikrohus selges samlet eller hver for seg</p>
+            </div>
+          </a>
+        </article>
+      </section>
   </main>
 </body>
 
