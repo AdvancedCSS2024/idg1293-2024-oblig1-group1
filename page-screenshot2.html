@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Screenshot 1 page</title>
+  <title>Screenshot 2 page</title>
+  <link rel="icon" href="https://www.finn.no/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/styles/style.css">
 </head>
+
 <body>
-  
+  <div class="page--login">
+    <div class="page__information">
+      <img src="https://static.finncdn.no/_c/static/finn_iphone_98x200.png" alt="iphone" class="information__image">
+      <p>Logg inn for å sende meldinger, lagre favoritter og søk. Du får også varsler når det skjer noe nytt!</p>
+      <p>Problemer med innloggingen? <a href="#" class="information__help-link">Her kan du finne hjelp</a></p>
+      <a href="#" class="information__back-link">Tilbake til FINN</a>
+    </div>
+
+    <div class="login-with-support">
+      <article class="card-login">
+        <div class="card-login__topbar">
+          <div>
+            <img
+              src="https://d3iwtia3ndepsv.cloudfront.net/clients/images/logos/5087dc1b421c7a0b79000000_56e7c4e3c1c45.png"
+              class="card-login__topbar--finn-logo" alt="">
+          </div>
+          <div>
+            <img src="https://d3iwtia3ndepsv.cloudfront.net/web/v4.5.31/assets/4c671371b02d586f499a4d89bf58fa50.png"
+              class="card-login__topbar--schibsted-logo" alt="">
+          </div>
+        </div>
+
+        <div class="card-login__body">
+          <h2 class="card-login__title">Logg inn</h2>
+          <form class="login-form">
+            <label for="username" class="login-form__label"></label>
+            <input class="login-form__input" type="text" id="username" placeholder="Skriv inn din e-postadresse*">
+            <p class="login-form__requierd">*Nødvendig felt</p>
+            <input class="login-form__input" type="text" placeholder="Vennligst oppgi passordet ditt*">
+            <img class="login-form__icon" src="assets/icons/hide-icon.svg" alt="">
+            <p class="login-form__requierd">*Nødvendig felt</p>
+          </form>
+        </div>
+
+        <a href="#" class="card-login__link">Glemt passord?</a>
+
+        <div class="checkbox">
+          <div class="checkbox__content">
+            <form class="checkbox__form">
+              <input type="checkbox" class="checkbox__input">
+            </form>
+            <p>Hold meg innlogget</p>
+          </div>
+          <img src="assets/icons/info-icon.svg" alt="">
+        </div>
+
+        <div class="button">
+          <button type="submit" class="button--primary">Logg på</button>
+          <button class="button--secondary">Opprette ny konto</button>
+        </div>
+      </article>
+
+      <div class="support">
+        <span class="support__link">Hjelp</span>
+        <span class="support__link">Personvernerklæring</span>
+        <span class="support__link">Vilkår</span>
+        <span class="support__link">Om Schibsted-konto</span>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
