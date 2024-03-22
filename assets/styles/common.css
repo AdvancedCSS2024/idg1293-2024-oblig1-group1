@@ -65,6 +65,21 @@ header {
 .nav-logo__item:hover, .nav-menu__item:hover {
   border-bottom: 2px solid rgba(0, 99, 251, 0.8);
 }
+.nav-logo__link, .nav-menu__link {
+  position: relative;
+}
+.nav-logo__icon--notfi-bubble, .nav-menu__icon--notfi-bubble {
+  height: 10px;
+  width: 10px;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  border-radius: 100%;
+  background-color: #d91f0a;
+  margin-right: 60px;
+}
 
 .nav-marked__list {
   display: grid;
@@ -90,6 +105,12 @@ header {
   width: 36px;
   height: 24px;
   margin-bottom: 0.8rem;
+}
+.nav-marked__icon--external {
+  margin-left: 3.1rem;
+  margin-bottom: 4rem;
+  opacity: 0.4;
+  position: absolute;
 }
 
 .search-container {
@@ -172,7 +193,7 @@ header {
   z-index: 2;
   top: 0;
   right: 0;
-  padding: 0.8rem 3.5rem 0.8rem 3.5rem;
+  padding: 0.8rem 1.5rem 0.8rem 3.5rem;
 }
 .card-marked__btn, .card-marked__price {
   bottom: 0;
