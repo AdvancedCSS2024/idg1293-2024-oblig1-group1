@@ -1,19 +1,40 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
-
 @use "common";
 
+// **Demo page**
+.title {
+    padding: 1rem;
+}
+
+.demo {
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+        margin: 100px;
+        padding: 20px;
+    }
+        &__article {
+            padding-left: 20px;
+        }
+}
+
 // **Screenshot 1 CSS**
+
 body {
     margin: 0px;
 }
 
-.foryou {
+.foryou-section {
+    
     &__header {
         display: flex;
         align-items: baseline;
         margin: 16px;
     }
-
+  
     &__title {
         font-family: "finn-font";
         padding-right: 8px;
@@ -30,3 +51,77 @@ body {
 }
 
 // **Screenshot 2 CSS**
+
+.page__information {
+   text-align: center;
+   background-color: common.$ice;
+   padding: 30px;
+}
+
+.card-login__topbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--finn-logo {
+        max-height: 18px;
+    }
+
+    &--schibsted-logo {
+        max-height: 24px;
+    } 
+}
+
+.page--login {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+}
+
+.login-with-support {
+    position: relative;
+    display: flex;
+    flex-direction: column
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+}   
+
+
+.button {
+    display: flex;
+    flex-direction: column;
+
+    &--secondary {
+        margin-top: 10px;
+    }
+}
+
+.support {
+    display: flex;
+    font-size: common.$text-14-size;
+    margin: 20px;
+    text-align: center;
+    justify-content: space-between;
+    color: common.$fontblack;
+}
+
+
+p.login-form__requierd {
+    color: common.$stone;
+    margin-top: 0%;
+    font-size: common.$text-12-size;
+}
